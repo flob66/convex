@@ -23,7 +23,7 @@ test("create tasks", async () => {
   await t.mutation(api.tasks.createTask, { text: "Integrate Convex", isCompleted: false }); //create task
 });
 
-test("get tasks", async () => {
+test("create and get tasks", async () => {
   const t = convexTest(schema);
   await t.query(api.tasks.get, {}); //get all tasks
 
